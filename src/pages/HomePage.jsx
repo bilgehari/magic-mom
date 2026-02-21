@@ -9,7 +9,7 @@ function HomePage() {
       {/* Hero Bölümü - Sitenin ana karşılama alanı */}
       <div className="flex flex-col items-center justify-center text-center px-4 py-24">
         <p className="text-pink-300 text-sm tracking-widest uppercase mb-3">El yapımı & Taze</p>
-        <h1 className="text-6xl font-bold text-gray-700 mb-4">Magic Mom</h1>
+        <h1 className="text-6xl font-bold text-gray-700 mb-4">Magic Mom 🪄</h1>
         <p className="text-gray-400 text-lg max-w-md mb-8">
           Sevgiyle pişirilmiş, taze malzemelerle hazırlanmış ev yapımı lezzetler.
         </p>

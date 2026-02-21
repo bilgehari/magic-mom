@@ -9,7 +9,7 @@ function Navbar() {
     <nav className="bg-white shadow-sm py-4 px-8 flex justify-between items-center">
       
       <Link to="/" className="text-2xl font-bold text-pink-400 tracking-wide">
-        Magic Mom 🍰
+      Magic Mom 🪄
       </Link>
 
       <div className="flex gap-6 items-center">
