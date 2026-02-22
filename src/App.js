@@ -8,6 +8,7 @@ import ProductsPage from './pages/ProductsPage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import CartPage from './pages/CartPage';
+import SpecialOrderPage from './pages/SpecialOrderPage';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/hakkimizda" element={<AboutPage />} />
           <Route path="/iletisim" element={<ContactPage />} />
           <Route path="/sepet" element={<CartPage />} />
+          <Route path="/ozel-siparis" element={<SpecialOrderPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>

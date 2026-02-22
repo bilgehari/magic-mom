@@ -9,9 +9,9 @@ function Navbar() {
 
   return (
     <nav className="bg-white shadow-sm py-4 px-8">
-      
+
       <div className="flex justify-between items-center">
-        
+
         {/* Logo */}
         <Link to="/" className="text-2xl font-bold text-pink-400 tracking-wide">
           Magic Mom 🪄
@@ -23,6 +23,7 @@ function Navbar() {
           <Link to="/urunler" className="text-gray-500 hover:text-pink-400 transition">Ürünler</Link>
           <Link to="/hakkimizda" className="text-gray-500 hover:text-pink-400 transition">Hakkımızda</Link>
           <Link to="/iletisim" className="text-gray-500 hover:text-pink-400 transition">İletişim</Link>
+          <Link to="/ozel-siparis" className="text-gray-500 hover:text-pink-400 transition">Özel Sipariş</Link>
           <Link to="/sepet" className="relative text-gray-500 hover:text-pink-400 transition">
             🛒
             {totalItems > 0 && (
@@ -60,6 +61,7 @@ function Navbar() {
           <Link to="/urunler" onClick={() => setMenuOpen(false)} className="text-gray-500 hover:text-pink-400 transition">Ürünler</Link>
           <Link to="/hakkimizda" onClick={() => setMenuOpen(false)} className="text-gray-500 hover:text-pink-400 transition">Hakkımızda</Link>
           <Link to="/iletisim" onClick={() => setMenuOpen(false)} className="text-gray-500 hover:text-pink-400 transition">İletişim</Link>
+          <Link to="/ozel-siparis" onClick={() => setMenuOpen(false)} className="text-gray-500 hover:text-pink-400 transition">Özel Sipariş</Link>
         </div>
       )}
 
