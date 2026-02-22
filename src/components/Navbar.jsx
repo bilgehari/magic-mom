@@ -17,13 +17,16 @@ function Navbar() {
           Magic Mom 🪄
         </Link>
 
-        {/* Masaüstü Menü - sadece büyük ekranda görünür */}
+        {/* Masaüstü Menü */}
         <div className="hidden sm:flex gap-6 items-center">
           <Link to="/" className="text-gray-500 hover:text-pink-400 transition">Ana Sayfa</Link>
           <Link to="/urunler" className="text-gray-500 hover:text-pink-400 transition">Ürünler</Link>
           <Link to="/hakkimizda" className="text-gray-500 hover:text-pink-400 transition">Hakkımızda</Link>
           <Link to="/iletisim" className="text-gray-500 hover:text-pink-400 transition">İletişim</Link>
           <Link to="/ozel-siparis" className="text-gray-500 hover:text-pink-400 transition">Özel Sipariş</Link>
+          <Link to="/giris" className="bg-pink-100 text-pink-500 px-4 py-2 rounded-full hover:bg-pink-200 transition text-sm">
+            Giriş Yap
+          </Link>
           <Link to="/sepet" className="relative text-gray-500 hover:text-pink-400 transition">
             🛒
             {totalItems > 0 && (
@@ -34,7 +37,7 @@ function Navbar() {
           </Link>
         </div>
 
-        {/* Mobil Sağ Taraf - sepet ve hamburger ikonu */}
+        {/* Mobil Sağ Taraf */}
         <div className="flex sm:hidden items-center gap-4">
           <Link to="/sepet" className="relative text-gray-500">
             🛒
@@ -62,6 +65,7 @@ function Navbar() {
           <Link to="/hakkimizda" onClick={() => setMenuOpen(false)} className="text-gray-500 hover:text-pink-400 transition">Hakkımızda</Link>
           <Link to="/iletisim" onClick={() => setMenuOpen(false)} className="text-gray-500 hover:text-pink-400 transition">İletişim</Link>
           <Link to="/ozel-siparis" onClick={() => setMenuOpen(false)} className="text-gray-500 hover:text-pink-400 transition">Özel Sipariş</Link>
+          <Link to="/giris" onClick={() => setMenuOpen(false)} className="text-gray-500 hover:text-pink-400 transition">Giriş Yap</Link>
         </div>
       )}
 
