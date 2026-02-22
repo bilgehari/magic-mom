@@ -21,6 +21,7 @@ function Navbar() {
         <div className="hidden sm:flex gap-6 items-center">
           <Link to="/" className="text-gray-500 hover:text-pink-400 transition">Ana Sayfa</Link>
           <Link to="/urunler" className="text-gray-500 hover:text-pink-400 transition">Ürünler</Link>
+          <Link to="/blog" className="text-gray-500 hover:text-pink-400 transition">Blog</Link>
           <Link to="/hakkimizda" className="text-gray-500 hover:text-pink-400 transition">Hakkımızda</Link>
           <Link to="/iletisim" className="text-gray-500 hover:text-pink-400 transition">İletişim</Link>
           <Link to="/ozel-siparis" className="text-gray-500 hover:text-pink-400 transition">Özel Sipariş</Link>
@@ -62,6 +63,7 @@ function Navbar() {
         <div className="sm:hidden flex flex-col gap-4 mt-4 pb-2">
           <Link to="/" onClick={() => setMenuOpen(false)} className="text-gray-500 hover:text-pink-400 transition">Ana Sayfa</Link>
           <Link to="/urunler" onClick={() => setMenuOpen(false)} className="text-gray-500 hover:text-pink-400 transition">Ürünler</Link>
+          <Link to="/blog" onClick={() => setMenuOpen(false)} className="text-gray-500 hover:text-pink-400 transition">Blog</Link>
           <Link to="/hakkimizda" onClick={() => setMenuOpen(false)} className="text-gray-500 hover:text-pink-400 transition">Hakkımızda</Link>
           <Link to="/iletisim" onClick={() => setMenuOpen(false)} className="text-gray-500 hover:text-pink-400 transition">İletişim</Link>
           <Link to="/ozel-siparis" onClick={() => setMenuOpen(false)} className="text-gray-500 hover:text-pink-400 transition">Özel Sipariş</Link>
