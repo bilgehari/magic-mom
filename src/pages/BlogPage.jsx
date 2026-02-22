@@ -16,15 +16,21 @@ function BlogPage() {
           <Link
             to={`/blog/${blog.id}`}
             key={blog.id}
-            className="bg-white rounded-2xl shadow-sm p-6 hover:shadow-md transition flex flex-col gap-3"
+            className="bg-white rounded-2xl shadow-sm overflow-hidden hover:shadow-md transition flex flex-col"
           >
-            <div className="text-5xl">{blog.emoji}</div>
-            <span className="text-pink-300 text-xs uppercase tracking-widest">{blog.category}</span>
-            <h2 className="text-xl font-bold text-gray-700">{blog.title}</h2>
-            <p className="text-gray-400 text-sm flex-1">{blog.ozet}</p>
-            <div className="flex justify-between items-center mt-2">
-              <span className="text-gray-300 text-xs">{blog.date}</span>
-              <span className="text-pink-400 text-sm font-medium">Devamını oku →</span>
+            <img
+              src={blog.image}
+              alt={blog.title}
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-6 flex flex-col gap-2 flex-1">
+              <span className="text-pink-300 text-xs uppercase tracking-widest">{blog.category}</span>
+              <h2 className="text-xl font-bold text-gray-700">{blog.title}</h2>
+              <p className="text-gray-400 text-sm flex-1">{blog.ozet}</p>
+              <div className="flex justify-between items-center mt-2">
+                <span className="text-gray-300 text-xs">{blog.date}</span>
+                <span className="text-pink-400 text-sm font-medium">Devamını oku →</span>
+              </div>
             </div>
           </Link>
         ))}

@@ -17,18 +17,26 @@ function BlogDetailPage() {
 
   return (
     <div className="min-h-screen bg-pink-50 py-16 px-4">
-      <div className="max-w-2xl mx-auto bg-white rounded-2xl shadow-sm p-8">
+      <div className="max-w-2xl mx-auto bg-white rounded-2xl shadow-sm overflow-hidden">
 
-        <div className="text-6xl mb-4 text-center">{blog.emoji}</div>
-        <span className="text-pink-300 text-xs uppercase tracking-widest">{blog.category}</span>
-        <h1 className="text-3xl font-bold text-gray-700 mt-2 mb-2">{blog.title}</h1>
-        <p className="text-gray-300 text-sm mb-6">{blog.date}</p>
-        <p className="text-gray-500 leading-relaxed">{blog.icerik}</p>
+        {/* Kapak Görseli */}
+        <img
+          src={blog.image}
+          alt={blog.title}
+          className="w-full h-64 object-cover"
+        />
 
-        <div className="mt-8">
-          <Link to="/blog" className="text-pink-400 hover:text-pink-500 font-medium">
-            ← Bloga dön
-          </Link>
+        <div className="p-8">
+          <span className="text-pink-300 text-xs uppercase tracking-widest">{blog.category}</span>
+          <h1 className="text-3xl font-bold text-gray-700 mt-2 mb-2">{blog.title}</h1>
+          <p className="text-gray-300 text-sm mb-6">{blog.date}</p>
+          <p className="text-gray-500 leading-relaxed">{blog.icerik}</p>
+
+          <div className="mt-8">
+            <Link to="/blog" className="text-pink-400 hover:text-pink-500 font-medium">
+              ← Bloga dön
+            </Link>
+          </div>
         </div>
 
       </div>
